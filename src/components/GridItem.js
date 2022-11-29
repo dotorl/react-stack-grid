@@ -36,6 +36,7 @@ type Props = {
 type State = Object;
 
 const getTransitionStyles = (type: string, props: Props): Object => {
+  console.log('getTransitionStyles');
   const { rect, containerSize, index } = props;
 
   return props[type](rect, containerSize, index);
